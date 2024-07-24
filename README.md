@@ -1,4 +1,78 @@
-# Customized-LLM-APP
+# Compilation of Recipes Across India Chatbot
+
+## Overview
+
+The "Compilation of Recipes Across India" chatbot provides users with detailed, authentic, and diverse recipes from various regions of India. It offers guidance on ingredients, cooking methods, regional specialties, and the cultural significance of dishes.
+
+## Features
+
+- **Detailed Recipes**: Get step-by-step instructions for preparing various Indian dishes.
+- **Regional Specialties**: Learn about the unique dishes from different parts of India.
+- **Cultural Significance**: Understand the cultural importance and history behind popular Indian recipes.
+- **User-Friendly Interface**: Easy-to-use chatbot interface built with Gradio.
+
+## Installation
+
+1. **Clone the repository**:
+    ```sh
+    git clone <your-repo-url>
+    cd <your-repo-directory>
+    ```
+
+2. **Create and activate a virtual environment**:
+    ```sh
+    python3 -m venv env
+    source env/bin/activate
+    ```
+
+3. **Install the required dependencies**:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+1. **Run the chatbot**:
+    ```sh
+    python app.py
+    ```
+
+2. **Interact with the chatbot**:
+    - Open your web browser and go to the local URL provided by Gradio.
+    - Start asking questions about Indian recipes and get detailed responses.
+
+## Project Structure
+
+- `app.py`: The main application file that contains the code for the chatbot.
+- `requirements.txt`: The file containing the required Python packages.
+
+## Example Questions
+
+- "How do I make butter chicken?"
+- "What are the ingredients for biryani?"
+- "Can you explain the method to prepare dosa?"
+- "What is the cultural significance of Diwali sweets?"
+- "How do I make a traditional Rajasthani thali?"
+
+## Customization
+
+- **System Message**: Modify the initial system message in `app.py` to change the chatbot's introduction and purpose.
+- **Parameters**: Adjust the `max_tokens`, `temperature`, and `top_p` sliders in the Gradio interface to customize the chatbot's responses.
+
+## Dependencies
+
+- `gradio`: For creating the web interface.
+- `huggingface_hub`: For interfacing with the Hugging Face Inference API.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Acknowledgments
+
+- [Hugging Face](https://huggingface.co/) for providing the Inference API.
+- [Gradio](https://www.gradio.app/) for the user-friendly web interface.
+
 
 Building a Retrieval-Augmented Generation (RAG) bot can significantly enhance the capabilities of a language model by incorporating external knowledge to generate more accurate and contextually relevant responses. This guide will walk you through creating a simple RAG bot using Gradio and the Hugging Face APIs.
 
